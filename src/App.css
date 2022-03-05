@@ -1,0 +1,122 @@
+#root {
+	height : 100%;
+	width : 100%;
+	position: absolute;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 4px;
+}
+
+.main-container {
+	display : flex;
+	position: relative;
+	height: 100%;
+}
+
+.mainView-container {
+	height : 100%;
+	overflow: auto;
+	flex : 4;
+}
+
+.chatView-container {
+	height : 100%;
+	overflow: auto;
+	position: relative;
+	border-left: 1px solid #f0f0f0;
+	flex : 8;
+}
+
+.header {
+	padding : 12px;
+	border-bottom : 1px solid #000;
+	height : 50px;
+	max-height : 50px
+}
+
+.search-input {
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+/* Chatbox css*/
+
+.chat-box {
+	display: flex;
+	padding: 15px;
+	border-bottom : 1px solid #f0f0f0;
+	cursor : pointer;
+}
+
+.chatBox-avatar-container {
+	flex : 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chatBox-content-container {
+	flex : 10;
+}
+
+.chatBox-time-container {
+	flex : 1;
+}
+
+.chatBox-avatar {
+	width : 40px;
+	height : 40px;
+	border-radius: 100%;
+}
+
+.chatView-header {
+	display: flex;
+	align-items: center;
+}
+
+.chatView-header-title-container {
+	flex : 8
+}
+
+.chatView-chat-container {
+	height : calc(100% - 125px);
+	background-color: #f1f3f6;
+    padding: 10px 40px;
+    overflow: auto;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.chatView-chat-input {
+	position: absolute;
+    width: calc(100% - 4px);
+    border: none;
+    height: calc(100% - 4px);
+	padding: 0px 15px;
+    box-sizing: border-box;
+	outline : none;
+}
+
+.chatView-chat-input-container {
+	position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+}
+
+.chat-message {
+	display: inline-flex;
+	padding: 12px;
+	border-radius:10px;
+}
+
+.send-button {
+	position: absolute;
+	right : 12px;
+	top : 15px;
+}
